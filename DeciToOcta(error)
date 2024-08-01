@@ -1,0 +1,28 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    int Decimal;
+    cout<<"Enter the Decimal Number :";
+    cin>>Decimal;
+    
+    int Rem ;
+    int i = 0 ; 
+    int a[i];
+    while(Decimal !=0){
+        Rem = Decimal % 8;
+        Decimal = Decimal / 8;
+        a[i] = Rem;
+        i++;
+    }
+    
+    cout<<"The Octadecimal Conversion Of the Decimal Number is :";
+    int j;
+    for(j = i-1; j>=0 ;j--){
+        cout<<a[j];
+    }
+
+    return 0;
+}
